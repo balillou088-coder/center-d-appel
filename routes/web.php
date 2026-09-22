@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-
-
-
+Route::get('/guides', function () {
+    return view('guides');
+})->name('guides');
