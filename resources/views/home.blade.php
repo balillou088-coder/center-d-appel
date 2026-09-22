@@ -11,34 +11,38 @@
 
             <div class="max-w-3xl">
 
+                {{-- Badge --}}
                 <div
                     class="inline-flex items-center gap-2
-                            px-3 py-1.5
-                            rounded-full
-                            bg-indigo-50
-                            border border-indigo-100
-                            text-indigo-600
-                            text-sm font-medium">
+                           px-3 py-1.5
+                           rounded-full
+                           bg-blue-50
+                           border border-blue-100
+                           text-blue-600
+                           text-sm font-medium">
 
-                    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
 
                     Documentation Arti Web
+
                 </div>
 
 
+                {{-- Title --}}
                 <h1
                     class="mt-6 text-4xl sm:text-5xl lg:text-6xl
                            font-bold tracking-tight text-slate-900">
 
                     Prenez en main Arti Web,
 
-                    <span class="block text-indigo-600">
+                    <span class="block text-red-600">
                         appel après appel.
                     </span>
 
                 </h1>
 
 
+                {{-- Description --}}
                 <p
                     class="mt-6 max-w-2xl
                           text-lg leading-8
@@ -59,7 +63,7 @@
                         <i data-lucide="search"
                             class="absolute left-4 top-1/2
                                   -translate-y-1/2
-                                  w-5 h-5 text-slate-400">
+                                  w-5 h-5 text-blue-500">
                         </i>
 
                         <input type="text" placeholder="Rechercher, par exemple « transférer un appel »"
@@ -72,10 +76,9 @@
                                    text-sm
                                    outline-none
                                    transition
-
-                                   focus:border-indigo-400
+                                   focus:border-blue-400
                                    focus:ring-4
-                                   focus:ring-indigo-100">
+                                   focus:ring-blue-100">
 
                     </div>
 
@@ -89,16 +92,17 @@
                         class="inline-flex items-center gap-2
                               px-4 py-2
                               rounded-lg
-                              bg-slate-100
+                              bg-blue-50
                               text-sm font-medium
-                              text-slate-600
-                              hover:bg-indigo-50
-                              hover:text-indigo-600
+                              text-blue-700
+                              hover:bg-blue-100
+                              hover:text-blue-800
                               transition">
 
                         <i data-lucide="book-open" class="w-4 h-4"></i>
 
                         Voir les guides
+
                     </a>
 
 
@@ -106,16 +110,17 @@
                         class="inline-flex items-center gap-2
                               px-4 py-2
                               rounded-lg
-                              bg-slate-100
+                              bg-red-50
                               text-sm font-medium
-                              text-slate-600
-                              hover:bg-indigo-50
-                              hover:text-indigo-600
+                              text-red-600
+                              hover:bg-red-100
+                              hover:text-red-700
                               transition">
 
                         <i data-lucide="circle-help" class="w-4 h-4"></i>
 
                         Questions fréquentes
+
                     </a>
 
                 </div>
@@ -128,25 +133,26 @@
 
 
     {{-- Guides --}}
-    <section id="guides" class="bg-slate-50
-                    border-y border-slate-200">
+    <section id="guides" class="bg-slate-50 border-y border-slate-200">
 
         <div class="max-w-7xl mx-auto px-6 py-20">
 
             {{-- Section header --}}
             <div
                 class="flex flex-col md:flex-row
-                        md:items-end
-                        md:justify-between
-                        gap-5 mb-10">
+                       md:items-end
+                       md:justify-between
+                       gap-5 mb-10">
 
                 <div>
 
                     <p
                         class="text-sm font-semibold
-                              text-indigo-600 uppercase
+                              text-blue-600 uppercase
                               tracking-wider">
+
                         Documentation
+
                     </p>
 
                     <h2 class="mt-2 text-3xl font-bold text-slate-900">
@@ -164,13 +170,12 @@
                 <a href="#guides"
                     class="inline-flex items-center gap-2
                           text-sm font-semibold
-                          text-indigo-600
-                          hover:text-indigo-700">
+                          text-blue-600
+                          hover:text-blue-700">
 
                     Tous les guides
 
-                    <i data-lucide="arrow-right" class="w-4 h-4">
-                    </i>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
 
                 </a>
 
@@ -187,20 +192,19 @@
                           rounded-2xl
                           border border-slate-200
                           p-6
-                          hover:border-indigo-200
+                          hover:border-blue-200
                           hover:shadow-lg
-                          hover:shadow-indigo-100/50
+                          hover:shadow-blue-100/50
                           transition">
 
                     <div
                         class="w-11 h-11
-                                rounded-xl
-                                bg-indigo-50
-                                flex items-center justify-center
-                                text-indigo-600">
+                               rounded-xl
+                               bg-blue-50
+                               flex items-center justify-center
+                               text-blue-600">
 
-                        <i data-lucide="log-in" class="w-5 h-5">
-                        </i>
+                        <i data-lucide="log-in" class="w-5 h-5"></i>
 
                     </div>
 
@@ -215,8 +219,8 @@
 
                     <div
                         class="mt-5 flex items-center
-                                text-sm font-semibold
-                                text-indigo-600">
+                               text-sm font-semibold
+                               text-blue-600">
 
                         Consulter le guide
 
@@ -237,20 +241,19 @@
                           rounded-2xl
                           border border-slate-200
                           p-6
-                          hover:border-indigo-200
+                          hover:border-red-200
                           hover:shadow-lg
-                          hover:shadow-indigo-100/50
+                          hover:shadow-red-100/50
                           transition">
 
                     <div
                         class="w-11 h-11
-                                rounded-xl
-                                bg-indigo-50
-                                flex items-center justify-center
-                                text-indigo-600">
+                               rounded-xl
+                               bg-red-50
+                               flex items-center justify-center
+                               text-red-600">
 
-                        <i data-lucide="phone" class="w-5 h-5">
-                        </i>
+                        <i data-lucide="phone" class="w-5 h-5"></i>
 
                     </div>
 
@@ -265,8 +268,8 @@
 
                     <div
                         class="mt-5 flex items-center
-                                text-sm font-semibold
-                                text-indigo-600">
+                               text-sm font-semibold
+                               text-red-600">
 
                         Consulter le guide
 
@@ -287,20 +290,19 @@
                           rounded-2xl
                           border border-slate-200
                           p-6
-                          hover:border-indigo-200
+                          hover:border-blue-200
                           hover:shadow-lg
-                          hover:shadow-indigo-100/50
+                          hover:shadow-blue-100/50
                           transition">
 
                     <div
                         class="w-11 h-11
-                                rounded-xl
-                                bg-indigo-50
-                                flex items-center justify-center
-                                text-indigo-600">
+                               rounded-xl
+                               bg-blue-50
+                               flex items-center justify-center
+                               text-blue-600">
 
-                        <i data-lucide="users" class="w-5 h-5">
-                        </i>
+                        <i data-lucide="users" class="w-5 h-5"></i>
 
                     </div>
 
@@ -315,8 +317,8 @@
 
                     <div
                         class="mt-5 flex items-center
-                                text-sm font-semibold
-                                text-indigo-600">
+                               text-sm font-semibold
+                               text-blue-600">
 
                         Consulter le guide
 
@@ -337,20 +339,19 @@
                           rounded-2xl
                           border border-slate-200
                           p-6
-                          hover:border-indigo-200
+                          hover:border-blue-200
                           hover:shadow-lg
-                          hover:shadow-indigo-100/50
+                          hover:shadow-blue-100/50
                           transition">
 
                     <div
                         class="w-11 h-11
-                                rounded-xl
-                                bg-indigo-50
-                                flex items-center justify-center
-                                text-indigo-600">
+                               rounded-xl
+                               bg-blue-50
+                               flex items-center justify-center
+                               text-blue-600">
 
-                        <i data-lucide="bar-chart-3" class="w-5 h-5">
-                        </i>
+                        <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
 
                     </div>
 
@@ -365,8 +366,8 @@
 
                     <div
                         class="mt-5 flex items-center
-                                text-sm font-semibold
-                                text-indigo-600">
+                               text-sm font-semibold
+                               text-blue-600">
 
                         Consulter le guide
 
@@ -387,20 +388,19 @@
                           rounded-2xl
                           border border-slate-200
                           p-6
-                          hover:border-indigo-200
+                          hover:border-red-200
                           hover:shadow-lg
-                          hover:shadow-indigo-100/50
+                          hover:shadow-red-100/50
                           transition">
 
                     <div
                         class="w-11 h-11
-                                rounded-xl
-                                bg-indigo-50
-                                flex items-center justify-center
-                                text-indigo-600">
+                               rounded-xl
+                               bg-red-50
+                               flex items-center justify-center
+                               text-red-600">
 
-                        <i data-lucide="settings" class="w-5 h-5">
-                        </i>
+                        <i data-lucide="settings" class="w-5 h-5"></i>
 
                     </div>
 
@@ -415,8 +415,8 @@
 
                     <div
                         class="mt-5 flex items-center
-                                text-sm font-semibold
-                                text-indigo-600">
+                               text-sm font-semibold
+                               text-red-600">
 
                         Consulter le guide
 
@@ -437,20 +437,19 @@
                           rounded-2xl
                           border border-slate-200
                           p-6
-                          hover:border-indigo-200
+                          hover:border-blue-200
                           hover:shadow-lg
-                          hover:shadow-indigo-100/50
+                          hover:shadow-blue-100/50
                           transition">
 
                     <div
                         class="w-11 h-11
-                                rounded-xl
-                                bg-indigo-50
-                                flex items-center justify-center
-                                text-indigo-600">
+                               rounded-xl
+                               bg-blue-50
+                               flex items-center justify-center
+                               text-blue-600">
 
-                        <i data-lucide="circle-help" class="w-5 h-5">
-                        </i>
+                        <i data-lucide="circle-help" class="w-5 h-5"></i>
 
                     </div>
 
@@ -465,8 +464,8 @@
 
                     <div
                         class="mt-5 flex items-center
-                                text-sm font-semibold
-                                text-indigo-600">
+                               text-sm font-semibold
+                               text-blue-600">
 
                         Consulter le guide
 
@@ -496,9 +495,11 @@
 
                 <p
                     class="text-sm font-semibold
-                          text-indigo-600 uppercase
+                          text-blue-600 uppercase
                           tracking-wider">
+
                     FAQ
+
                 </p>
 
                 <h2 class="mt-2 text-3xl font-bold">
@@ -520,15 +521,15 @@
                               p-5
                               rounded-xl
                               border border-slate-200
-                              hover:border-indigo-200
-                              hover:bg-indigo-50/50
+                              hover:border-blue-200
+                              hover:bg-blue-50/50
                               transition">
 
                         <span class="font-medium text-slate-700">
                             {{ $question }}
                         </span>
 
-                        <i data-lucide="chevron-right" class="w-5 h-5 text-slate-400">
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-blue-500">
                         </i>
 
                     </a>
@@ -542,15 +543,15 @@
 
 
     {{-- Support --}}
-    <section id="support" class="bg-indigo-600">
+    <section id="support" class="bg-red-600">
 
         <div class="max-w-7xl mx-auto px-6 py-16">
 
             <div
                 class="flex flex-col md:flex-row
-                        md:items-center
-                        md:justify-between
-                        gap-8">
+                       md:items-center
+                       md:justify-between
+                       gap-8">
 
                 <div>
 
@@ -558,8 +559,7 @@
                         Une question sans réponse ?
                     </h2>
 
-                    <p class="mt-3 max-w-xl
-                              text-indigo-100">
+                    <p class="mt-3 max-w-xl text-red-100">
                         Contactez l'équipe technique d'Arti Web,
                         on vous répond rapidement.
                     </p>
@@ -573,9 +573,10 @@
                           px-6 py-3
                           rounded-xl
                           bg-white
-                          text-indigo-600
+                          text-red-600
                           font-semibold
-                          hover:bg-indigo-50
+                          hover:bg-blue-50
+                          hover:text-blue-600
                           transition">
 
                     <i data-lucide="mail" class="w-5 h-5"></i>
