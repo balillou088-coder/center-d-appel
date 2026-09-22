@@ -23,11 +23,10 @@
         <div class="h-full px-6 flex items-center justify-between">
 
             {{-- Logo --}}
+            {{-- Logo --}}
             <a href="{{ url('/') }}" class="flex items-center gap-3">
 
-                <div class="w-9 h-9 rounded-lg bg-red-600 flex items-center justify-center">
-                    <i data-lucide="phone-call" class="w-5 h-5 text-white"></i>
-                </div>
+                <img src="{{ asset('images/logo.png') }}" alt="Arti Call Logo" class="h-14 w-auto object-contain">
 
                 <div>
                     <h1 class="font-bold text-lg leading-none">
@@ -49,9 +48,7 @@
                     Accueil
                 </a>
 
-                <a href="#guides" class="text-slate-600 hover:text-red-600 transition">
-                    Guides
-                </a>
+                <a href="{{ route('guides') }}">Guides</a>
 
                 <a href="{{ route('faq') }}" class="text-slate-600 hover:text-red-600 transition">
                     Questions fréquentes

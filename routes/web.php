@@ -15,6 +15,6 @@ Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 // routes/web.php
 Route::get('/guides/appels', [GuideController::class, 'appels'])->name('guides.appels');
 
-
-
-
+Route::get('/guides', function () {
+    return view('guides');
+})->name('guides');

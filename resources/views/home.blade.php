@@ -4,7 +4,9 @@
 
 @section('content')
 
-    {{-- Hero --}}
+    {{-- =========================================================
+        HERO
+    ========================================================== --}}
     <section class="relative overflow-hidden bg-white">
 
         <div class="max-w-7xl mx-auto px-6 py-20 lg:py-28">
@@ -23,7 +25,7 @@
 
                     <span class="w-2 h-2 rounded-full bg-blue-600"></span>
 
-                    Documentation Arti Web
+                    Arti Web
 
                 </div>
 
@@ -48,82 +50,11 @@
                           text-lg leading-8
                           text-slate-500">
 
-                    Les guides pour les agents et les administrateurs
-                    du centre d'appels : de la connexion au suivi
-                    des rapports.
+                    Une solution moderne pour simplifier la gestion
+                    des appels, des clients et des activités de votre
+                    centre d'appels.
 
                 </p>
-
-
-                {{-- Search --}}
-                <div class="mt-8 max-w-2xl">
-
-                    <div class="relative">
-
-                        <i data-lucide="search"
-                            class="absolute left-4 top-1/2
-                                  -translate-y-1/2
-                                  w-5 h-5 text-blue-500">
-                        </i>
-
-                        <input type="text" placeholder="Rechercher, par exemple « transférer un appel »"
-                            class="w-full h-14
-                                   pl-12 pr-5
-                                   rounded-xl
-                                   border border-slate-200
-                                   bg-white
-                                   shadow-sm
-                                   text-sm
-                                   outline-none
-                                   transition
-                                   focus:border-blue-400
-                                   focus:ring-4
-                                   focus:ring-blue-100">
-
-                    </div>
-
-                </div>
-
-
-                {{-- Quick links --}}
-                <div class="mt-5 flex flex-wrap gap-3">
-
-                    <a href="#guides"
-                        class="inline-flex items-center gap-2
-                              px-4 py-2
-                              rounded-lg
-                              bg-blue-50
-                              text-sm font-medium
-                              text-blue-700
-                              hover:bg-blue-100
-                              hover:text-blue-800
-                              transition">
-
-                        <i data-lucide="book-open" class="w-4 h-4"></i>
-
-                        Voir les guides
-
-                    </a>
-
-
-                    <a href="#faq"
-                        class="inline-flex items-center gap-2
-                              px-4 py-2
-                              rounded-lg
-                              bg-red-50
-                              text-sm font-medium
-                              text-red-600
-                              hover:bg-red-100
-                              hover:text-red-700
-                              transition">
-
-                        <i data-lucide="circle-help" class="w-4 h-4"></i>
-
-                        Questions fréquentes
-
-                    </a>
-
-                </div>
 
             </div>
 
@@ -132,352 +63,216 @@
     </section>
 
 
-    {{-- Guides --}}
-    <section id="guides" class="bg-slate-50 border-y border-slate-200">
+    {{-- =========================================================
+        PRÉSENTATION ARTI WEB
+    ========================================================== --}}
+    <section id="presentation" class="bg-slate-50 border-y border-slate-200">
 
-        <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="max-w-7xl mx-auto px-6 py-16 lg:py-20">
 
-            {{-- Section header --}}
-            <div
-                class="flex flex-col md:flex-row
-                       md:items-end
-                       md:justify-between
-                       gap-5 mb-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
 
+                {{-- Texte --}}
                 <div>
 
-                    <p
-                        class="text-sm font-semibold
-                              text-blue-600 uppercase
-                              tracking-wider">
+                    <span class="text-sm font-semibold text-blue-600">
+                        À PROPOS D'ARTI WEB
+                    </span>
 
-                        Documentation
+                    <h2
+                        class="mt-3 text-3xl sm:text-4xl
+                               font-bold tracking-tight
+                               text-slate-900">
 
-                    </p>
+                        Une solution pensée pour
+                        <span class="text-red-600">
+                            les centres d'appels.
+                        </span>
 
-                    <h2 class="mt-2 text-3xl font-bold text-slate-900">
-                        Tout ce dont vous avez besoin
                     </h2>
 
-                    <p class="mt-3 text-slate-500">
-                        Retrouvez rapidement les informations
-                        dont vous avez besoin.
+                    <p class="mt-5 text-base leading-7 text-slate-500">
+
+                        Arti Web est une plateforme web conçue pour faciliter
+                        l'organisation et la gestion quotidienne d'un centre
+                        d'appels.
+
                     </p>
+
+                    <p class="mt-4 text-base leading-7 text-slate-500">
+
+                        Elle permet de centraliser les informations, de suivre
+                        les activités des agents et de simplifier la gestion
+                        des appels et des clients dans un environnement moderne
+                        et intuitif.
+
+                    </p>
+
+
+                    {{-- Point important --}}
+                    <div class="mt-7 flex items-center gap-3">
+
+                        <div
+                            class="flex items-center justify-center
+                                   w-10 h-10
+                                   rounded-lg
+                                   bg-blue-50
+                                   text-blue-600">
+
+                            <i data-lucide="check" class="w-5 h-5"></i>
+
+                        </div>
+
+                        <span class="text-sm font-medium text-slate-700">
+
+                            Une gestion centralisée et simplifiée
+
+                        </span>
+
+                    </div>
 
                 </div>
 
 
-                <a href="#guides"
-                    class="inline-flex items-center gap-2
-                          text-sm font-semibold
-                          text-blue-600
-                          hover:text-blue-700">
-
-                    Tous les guides
-
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-
-                </a>
-
-            </div>
-
-
-            {{-- Cards --}}
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-
-                {{-- Card 1 --}}
-                <a href="#connexion"
-                    class="group bg-white
-                          rounded-2xl
-                          border border-slate-200
-                          p-6
-                          hover:border-blue-200
-                          hover:shadow-lg
-                          hover:shadow-blue-100/50
-                          transition">
+                {{-- Bloc fonctionnalités --}}
+                <div>
 
                     <div
-                        class="w-11 h-11
-                               rounded-xl
-                               bg-blue-50
-                               flex items-center justify-center
-                               text-blue-600">
+                        class="rounded-2xl
+                               bg-white
+                               border border-slate-200
+                               shadow-sm
+                               p-6 sm:p-8">
 
-                        <i data-lucide="log-in" class="w-5 h-5"></i>
+                        {{-- Header --}}
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="flex items-center justify-center
+                                       w-12 h-12
+                                       rounded-xl
+                                       bg-blue-50
+                                       text-blue-600">
+
+                                <i data-lucide="phone-call" class="w-6 h-6">
+                                </i>
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="font-bold text-slate-900">
+                                    Arti Web
+                                </h3>
+
+                                <p class="text-sm text-slate-500">
+                                    Gestion de centre d'appel
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        {{-- Features --}}
+                        <div class="mt-8 grid grid-cols-2 gap-4">
+
+                            {{-- Appels --}}
+                            <div
+                                class="rounded-xl
+                                       bg-slate-50
+                                       p-5
+                                       border border-transparent
+                                       hover:border-blue-100
+                                       transition">
+
+                                <i data-lucide="phone" class="w-5 h-5 text-blue-600">
+                                </i>
+
+                                <p class="mt-3 text-sm font-semibold text-slate-900">
+                                    Appels
+                                </p>
+
+                                <p class="mt-1 text-xs text-slate-500">
+                                    Gestion simplifiée
+                                </p>
+
+                            </div>
+
+
+                            {{-- Équipes --}}
+                            <div
+                                class="rounded-xl
+                                       bg-slate-50
+                                       p-5
+                                       border border-transparent
+                                       hover:border-red-100
+                                       transition">
+
+                                <i data-lucide="users" class="w-5 h-5 text-red-600">
+                                </i>
+
+                                <p class="mt-3 text-sm font-semibold text-slate-900">
+                                    Équipes
+                                </p>
+
+                                <p class="mt-1 text-xs text-slate-500">
+                                    Organisation efficace
+                                </p>
+
+                            </div>
+
+
+                            {{-- Clients --}}
+                            <div
+                                class="rounded-xl
+                                       bg-slate-50
+                                       p-5
+                                       border border-transparent
+                                       hover:border-blue-100
+                                       transition">
+
+                                <i data-lucide="user-round" class="w-5 h-5 text-blue-600">
+                                </i>
+
+                                <p class="mt-3 text-sm font-semibold text-slate-900">
+                                    Clients
+                                </p>
+
+                                <p class="mt-1 text-xs text-slate-500">
+                                    Informations centralisées
+                                </p>
+
+                            </div>
+
+
+                            {{-- Activité --}}
+                            <div
+                                class="rounded-xl
+                                       bg-slate-50
+                                       p-5
+                                       border border-transparent
+                                       hover:border-red-100
+                                       transition">
+
+                                <i data-lucide="bar-chart-3" class="w-5 h-5 text-red-600">
+                                </i>
+
+                                <p class="mt-3 text-sm font-semibold text-slate-900">
+                                    Activité
+                                </p>
+
+                                <p class="mt-1 text-xs text-slate-500">
+                                    Suivi quotidien
+                                </p>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <h3 class="mt-5 font-semibold text-lg">
-                        Connexion et comptes
-                    </h3>
-
-                    <p class="mt-2 text-sm leading-6 text-slate-500">
-                        Se connecter et comprendre les différents
-                        rôles disponibles dans Arti Web.
-                    </p>
-
-                    <div
-                        class="mt-5 flex items-center
-                               text-sm font-semibold
-                               text-blue-600">
-
-                        Consulter le guide
-
-                        <i data-lucide="arrow-right"
-                            class="ml-2 w-4 h-4
-                                  group-hover:translate-x-1
-                                  transition">
-                        </i>
-
-                    </div>
-
-                </a>
-
-
-                {{-- Card 2 --}}
-                <a href="#appels"
-                    class="group bg-white
-                          rounded-2xl
-                          border border-slate-200
-                          p-6
-                          hover:border-red-200
-                          hover:shadow-lg
-                          hover:shadow-red-100/50
-                          transition">
-
-                    <div
-                        class="w-11 h-11
-                               rounded-xl
-                               bg-red-50
-                               flex items-center justify-center
-                               text-red-600">
-
-                        <i data-lucide="phone" class="w-5 h-5"></i>
-
-                    </div>
-
-                    <h3 class="mt-5 font-semibold text-lg">
-                        Gestion des appels
-                    </h3>
-
-                    <p class="mt-2 text-sm leading-6 text-slate-500">
-                        Répondre, transférer, mettre en attente,
-                        prendre des notes et retrouver l'historique.
-                    </p>
-
-                    <div
-                        class="mt-5 flex items-center
-                               text-sm font-semibold
-                               text-red-600">
-
-                        Consulter le guide
-
-                        <i data-lucide="arrow-right"
-                            class="ml-2 w-4 h-4
-                                  group-hover:translate-x-1
-                                  transition">
-                        </i>
-
-                    </div>
-
-                </a>
-
-
-                {{-- Card 3 --}}
-                <a href="#clients"
-                    class="group bg-white
-                          rounded-2xl
-                          border border-slate-200
-                          p-6
-                          hover:border-blue-200
-                          hover:shadow-lg
-                          hover:shadow-blue-100/50
-                          transition">
-
-                    <div
-                        class="w-11 h-11
-                               rounded-xl
-                               bg-blue-50
-                               flex items-center justify-center
-                               text-blue-600">
-
-                        <i data-lucide="users" class="w-5 h-5"></i>
-
-                    </div>
-
-                    <h3 class="mt-5 font-semibold text-lg">
-                        Clients et contacts
-                    </h3>
-
-                    <p class="mt-2 text-sm leading-6 text-slate-500">
-                        Créer une fiche, chercher un client et consulter
-                        ses échanges précédents.
-                    </p>
-
-                    <div
-                        class="mt-5 flex items-center
-                               text-sm font-semibold
-                               text-blue-600">
-
-                        Consulter le guide
-
-                        <i data-lucide="arrow-right"
-                            class="ml-2 w-4 h-4
-                                  group-hover:translate-x-1
-                                  transition">
-                        </i>
-
-                    </div>
-
-                </a>
-
-
-                {{-- Card 4 --}}
-                <a href="#rapports"
-                    class="group bg-white
-                          rounded-2xl
-                          border border-slate-200
-                          p-6
-                          hover:border-blue-200
-                          hover:shadow-lg
-                          hover:shadow-blue-100/50
-                          transition">
-
-                    <div
-                        class="w-11 h-11
-                               rounded-xl
-                               bg-blue-50
-                               flex items-center justify-center
-                               text-blue-600">
-
-                        <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
-
-                    </div>
-
-                    <h3 class="mt-5 font-semibold text-lg">
-                        Rapports et statistiques
-                    </h3>
-
-                    <p class="mt-2 text-sm leading-6 text-slate-500">
-                        Suivre le volume d'appels, la durée moyenne
-                        et la performance de chaque équipe.
-                    </p>
-
-                    <div
-                        class="mt-5 flex items-center
-                               text-sm font-semibold
-                               text-blue-600">
-
-                        Consulter le guide
-
-                        <i data-lucide="arrow-right"
-                            class="ml-2 w-4 h-4
-                                  group-hover:translate-x-1
-                                  transition">
-                        </i>
-
-                    </div>
-
-                </a>
-
-
-                {{-- Card 5 --}}
-                <a href="#administration"
-                    class="group bg-white
-                          rounded-2xl
-                          border border-slate-200
-                          p-6
-                          hover:border-red-200
-                          hover:shadow-lg
-                          hover:shadow-red-100/50
-                          transition">
-
-                    <div
-                        class="w-11 h-11
-                               rounded-xl
-                               bg-red-50
-                               flex items-center justify-center
-                               text-red-600">
-
-                        <i data-lucide="settings" class="w-5 h-5"></i>
-
-                    </div>
-
-                    <h3 class="mt-5 font-semibold text-lg">
-                        Administration
-                    </h3>
-
-                    <p class="mt-2 text-sm leading-6 text-slate-500">
-                        Gérer les utilisateurs, les équipes,
-                        les files d'attente et les permissions.
-                    </p>
-
-                    <div
-                        class="mt-5 flex items-center
-                               text-sm font-semibold
-                               text-red-600">
-
-                        Consulter le guide
-
-                        <i data-lucide="arrow-right"
-                            class="ml-2 w-4 h-4
-                                  group-hover:translate-x-1
-                                  transition">
-                        </i>
-
-                    </div>
-
-                </a>
-
-
-                {{-- Card 6 --}}
-                <a href="#faq"
-                    class="group bg-white
-                          rounded-2xl
-                          border border-slate-200
-                          p-6
-                          hover:border-blue-200
-                          hover:shadow-lg
-                          hover:shadow-blue-100/50
-                          transition">
-
-                    <div
-                        class="w-11 h-11
-                               rounded-xl
-                               bg-blue-50
-                               flex items-center justify-center
-                               text-blue-600">
-
-                        <i data-lucide="circle-help" class="w-5 h-5"></i>
-
-                    </div>
-
-                    <h3 class="mt-5 font-semibold text-lg">
-                        FAQ et dépannage
-                    </h3>
-
-                    <p class="mt-2 text-sm leading-6 text-slate-500">
-                        Retrouvez les réponses aux erreurs
-                        et problèmes les plus courants.
-                    </p>
-
-                    <div
-                        class="mt-5 flex items-center
-                               text-sm font-semibold
-                               text-blue-600">
-
-                        Consulter le guide
-
-                        <i data-lucide="arrow-right"
-                            class="ml-2 w-4 h-4
-                                  group-hover:translate-x-1
-                                  transition">
-                        </i>
-
-                    </div>
-
-                </a>
+                </div>
 
             </div>
 
@@ -486,54 +281,233 @@
     </section>
 
 
-    {{-- FAQ --}}
-    <section id="faq" class="bg-white">
+    {{-- =========================================================
+        CALL CENTER IMAGE / ANIMATION
+    ========================================================== --}}
+    <section class="relative overflow-hidden bg-white">
 
-        <div class="max-w-5xl mx-auto px-6 py-20">
+        <div class="max-w-7xl mx-auto px-6 py-16 lg:py-24">
 
-            <div class="text-center mb-10">
+            {{-- Section header --}}
+            <div class="max-w-2xl mb-10">
 
-                <p
-                    class="text-sm font-semibold
-                          text-blue-600 uppercase
-                          tracking-wider">
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+                    L'environnement Arti Web
+                </span>
 
-                    FAQ
+                <h2
+                    class="mt-3 text-3xl sm:text-4xl
+                           font-bold tracking-tight
+                           text-slate-900">
 
-                </p>
+                    Au cœur de votre
+                    <span class="text-red-600">
+                        centre d'appel.
+                    </span>
 
-                <h2 class="mt-2 text-3xl font-bold">
-                    Questions fréquentes
                 </h2>
 
-                <p class="mt-3 text-slate-500">
-                    Les réponses aux questions les plus courantes.
+                <p class="mt-4 text-base sm:text-lg leading-7 text-slate-500">
+
+                    Une expérience moderne pour accompagner vos équipes
+                    et simplifier la gestion quotidienne des appels.
+
                 </p>
 
             </div>
 
 
-            <div class="space-y-3">
+            {{-- Image Card --}}
+            <div
+                class="relative
+                       group
+                       overflow-hidden
+                       rounded-3xl
+                       border border-slate-200
+                       bg-slate-900
+                       shadow-2xl">
 
-                @foreach (['Comment récupérer un mot de passe oublié ?', 'Comment transférer un appel à un collègue ?', "Pourquoi un appel n'apparaît-il pas dans l'historique ?", 'Comment exporter un rapport en Excel ?'] as $question)
-                    <a href="#"
-                        class="flex items-center justify-between
-                              p-5
-                              rounded-xl
-                              border border-slate-200
-                              hover:border-blue-200
-                              hover:bg-blue-50/50
-                              transition">
+                {{-- Image --}}
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85"
+                    alt="Centre d'appel Arti Web"
+                    class="w-full
+                           h-[360px]
+                           sm:h-[450px]
+                           lg:h-[560px]
+                           object-cover
+                           object-center
+                           call-center-image">
 
-                        <span class="font-medium text-slate-700">
-                            {{ $question }}
-                        </span>
 
-                        <i data-lucide="chevron-right" class="w-5 h-5 text-blue-500">
-                        </i>
+                {{-- Overlay --}}
+                <div
+                    class="absolute inset-0
+                           bg-gradient-to-r
+                           from-slate-950/85
+                           via-slate-900/45
+                           to-transparent">
+                </div>
 
-                    </a>
-                @endforeach
+
+                {{-- Content --}}
+                <div class="absolute inset-0
+                           flex items-center">
+
+                    <div class="max-w-xl px-7 sm:px-10 lg:px-14">
+
+                        {{-- Badge --}}
+                        <div
+                            class="inline-flex items-center gap-2
+                                   px-4 py-2
+                                   rounded-full
+                                   bg-white/10
+                                   border border-white/20
+                                   backdrop-blur-md
+                                   text-white
+                                   text-sm font-medium">
+
+                            <span
+                                class="w-2.5 h-2.5
+                                       rounded-full
+                                       bg-blue-400
+                                       shadow-[0_0_12px_rgba(96,165,250,0.9)]
+                                       animate-pulse">
+                            </span>
+
+                            Centre d'appel Arti Web
+
+                        </div>
+
+
+                        {{-- Title --}}
+                        <h3
+                            class="mt-6
+                                   text-3xl
+                                   sm:text-4xl
+                                   lg:text-5xl
+                                   font-bold
+                                   leading-tight
+                                   tracking-tight
+                                   text-white">
+
+                            Une gestion plus simple,
+                            <span class="block text-red-400">
+                                plus rapide et plus moderne.
+                            </span>
+
+                        </h3>
+
+
+                        {{-- Description --}}
+                        <p
+                            class="mt-5
+                                  max-w-lg
+                                  text-base
+                                  sm:text-lg
+                                  leading-7
+                                  text-slate-200">
+
+                            Arti Web permet aux équipes de travailler dans
+                            un environnement organisé, connecté et pensé
+                            pour les besoins d'un centre d'appel.
+
+                        </p>
+
+
+                        {{-- Informations --}}
+                        <div class="mt-7 flex flex-wrap gap-3">
+
+                            {{-- Item 1 --}}
+                            <div
+                                class="inline-flex items-center gap-2
+                                       px-4 py-2.5
+                                       rounded-xl
+                                       bg-white/10
+                                       border border-white/15
+                                       backdrop-blur-md
+                                       text-white
+                                       text-sm">
+
+                                <i data-lucide="headphones" class="w-4 h-4 text-blue-300">
+                                </i>
+
+                                Équipe professionnelle
+
+                            </div>
+
+
+                            {{-- Item 2 --}}
+                            <div
+                                class="inline-flex items-center gap-2
+                                       px-4 py-2.5
+                                       rounded-xl
+                                       bg-white/10
+                                       border border-white/15
+                                       backdrop-blur-md
+                                       text-white
+                                       text-sm">
+
+                                <i data-lucide="phone-call" class="w-4 h-4 text-red-300">
+                                </i>
+
+                                Gestion des appels
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                {{-- Floating icon --}}
+                <div
+                    class="absolute
+                           top-6
+                           right-6
+                           hidden sm:flex
+                           items-center
+                           justify-center
+                           w-14 h-14
+                           rounded-2xl
+                           bg-white/10
+                           border border-white/20
+                           backdrop-blur-md
+                           text-white
+                           floating-icon">
+
+                    <i data-lucide="phone-call" class="w-6 h-6">
+                    </i>
+
+                </div>
+
+
+                {{-- Bottom status --}}
+                <div
+                    class="absolute
+                           bottom-6
+                           right-6
+                           hidden md:flex
+                           items-center gap-3
+                           px-4 py-3
+                           rounded-2xl
+                           bg-white/10
+                           border border-white/20
+                           backdrop-blur-md">
+
+                    <span
+                        class="w-2.5 h-2.5
+                               rounded-full
+                               bg-green-400
+                               shadow-[0_0_10px_rgba(74,222,128,0.9)]">
+                    </span>
+
+                    <span class="text-sm font-medium text-white">
+                        Solution active
+                    </span>
+
+                </div>
 
             </div>
 
@@ -542,7 +516,9 @@
     </section>
 
 
-    {{-- Support --}}
+    {{-- =========================================================
+        SUPPORT
+    ========================================================== --}}
     <section id="support" class="bg-red-600">
 
         <div class="max-w-7xl mx-auto px-6 py-16">
@@ -556,12 +532,16 @@
                 <div>
 
                     <h2 class="text-3xl font-bold text-white">
+
                         Une question sans réponse ?
+
                     </h2>
 
                     <p class="mt-3 max-w-xl text-red-100">
+
                         Contactez l'équipe technique d'Arti Web,
                         on vous répond rapidement.
+
                     </p>
 
                 </div>
@@ -590,5 +570,83 @@
         </div>
 
     </section>
+
+
+    {{-- =========================================================
+        ANIMATIONS
+    ========================================================== --}}
+    <style>
+        /* Animation lente de l'image */
+        @keyframes callCenterZoom {
+
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.045);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+
+        }
+
+
+        /* Animation de l'icône */
+        @keyframes floatingIcon {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+        }
+
+
+        .call-center-image {
+
+            animation: callCenterZoom 10s ease-in-out infinite;
+
+            transition:
+                transform 1.5s ease,
+                filter 0.8s ease;
+
+        }
+
+
+        .group:hover .call-center-image {
+
+            transform: scale(1.08);
+
+            filter: brightness(1.08);
+
+        }
+
+
+        .floating-icon {
+
+            animation: floatingIcon 3s ease-in-out infinite;
+
+        }
+
+
+        /* Respect des préférences utilisateur */
+        @media (prefers-reduced-motion: reduce) {
+
+            .call-center-image,
+            .floating-icon {
+
+                animation: none;
+
+            }
+
+        }
+    </style>
 
 @endsection
