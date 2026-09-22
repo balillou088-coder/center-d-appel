@@ -1,3 +1,4 @@
+```blade
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -23,7 +24,8 @@
 
             {{-- Logo --}}
             <a href="{{ url('/') }}" class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center">
+
+                <div class="w-9 h-9 rounded-lg bg-red-600 flex items-center justify-center">
                     <i data-lucide="phone-call" class="w-5 h-5 text-white"></i>
                 </div>
 
@@ -36,25 +38,26 @@
                         Documentation
                     </span>
                 </div>
+
             </a>
 
 
             {{-- Navigation --}}
             <nav class="hidden md:flex items-center gap-7 text-sm">
 
-                <a href="{{ url('/') }}" class="text-slate-600 hover:text-indigo-600 transition">
+                <a href="{{ url('/') }}" class="text-slate-600 hover:text-red-600 transition">
                     Accueil
                 </a>
 
-                <a href="#guides" class="text-slate-600 hover:text-indigo-600 transition">
+                <a href="#guides" class="text-slate-600 hover:text-red-600 transition">
                     Guides
                 </a>
 
-                <a href="#faq" class="text-slate-600 hover:text-indigo-600 transition">
+                <a href="#faq" class="text-slate-600 hover:text-red-600 transition">
                     Questions fréquentes
                 </a>
 
-                <a href="#support" class="text-slate-600 hover:text-indigo-600 transition">
+                <a href="#support" class="text-slate-600 hover:text-red-600 transition">
                     Support
                 </a>
 
@@ -63,6 +66,7 @@
 
             {{-- Search --}}
             <div class="hidden lg:flex items-center">
+
                 <div class="relative">
 
                     <i data-lucide="search"
@@ -78,14 +82,16 @@
                                text-sm
                                outline-none
                                focus:bg-white
-                               focus:border-indigo-300
+                               focus:border-red-300
                                focus:ring-2
-                               focus:ring-indigo-100">
+                               focus:ring-red-100">
 
                 </div>
+
             </div>
 
         </div>
+
     </header>
 
 
@@ -114,8 +120,8 @@
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
-                                  hover:bg-indigo-50
-                                  hover:text-indigo-600
+                                  hover:bg-red-50
+                                  hover:text-red-600
                                   transition">
 
                             <i data-lucide="log-in" class="w-4 h-4"></i>
@@ -123,6 +129,7 @@
                             <span>
                                 Connexion et comptes
                             </span>
+
                         </a>
 
 
@@ -130,8 +137,8 @@
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
-                                  hover:bg-indigo-50
-                                  hover:text-indigo-600
+                                  hover:bg-red-50
+                                  hover:text-red-600
                                   transition">
 
                             <i data-lucide="phone" class="w-4 h-4"></i>
@@ -139,6 +146,7 @@
                             <span>
                                 Gestion des appels
                             </span>
+
                         </a>
 
 
@@ -146,8 +154,8 @@
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
-                                  hover:bg-indigo-50
-                                  hover:text-indigo-600
+                                  hover:bg-red-50
+                                  hover:text-red-600
                                   transition">
 
                             <i data-lucide="users" class="w-4 h-4"></i>
@@ -155,6 +163,7 @@
                             <span>
                                 Clients et contacts
                             </span>
+
                         </a>
 
 
@@ -162,8 +171,8 @@
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
-                                  hover:bg-indigo-50
-                                  hover:text-indigo-600
+                                  hover:bg-red-50
+                                  hover:text-red-600
                                   transition">
 
                             <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
@@ -171,6 +180,7 @@
                             <span>
                                 Rapports et statistiques
                             </span>
+
                         </a>
 
 
@@ -178,8 +188,8 @@
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
-                                  hover:bg-indigo-50
-                                  hover:text-indigo-600
+                                  hover:bg-red-50
+                                  hover:text-red-600
                                   transition">
 
                             <i data-lucide="settings" class="w-4 h-4"></i>
@@ -187,6 +197,7 @@
                             <span>
                                 Administration
                             </span>
+
                         </a>
 
 
@@ -194,8 +205,8 @@
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
-                                  hover:bg-indigo-50
-                                  hover:text-indigo-600
+                                  hover:bg-red-50
+                                  hover:text-red-600
                                   transition">
 
                             <i data-lucide="circle-help" class="w-4 h-4"></i>
@@ -203,17 +214,18 @@
                             <span>
                                 FAQ & dépannage
                             </span>
+
                         </a>
 
                     </nav>
 
 
                     {{-- Support Card --}}
-                    <div class="mt-8 p-4 rounded-xl bg-indigo-50 border border-indigo-100">
+                    <div class="mt-8 p-4 rounded-xl bg-red-50 border border-red-100">
 
                         <div class="flex items-center gap-2 mb-2">
 
-                            <i data-lucide="headphones" class="w-4 h-4 text-indigo-600">
+                            <i data-lucide="headphones" class="w-4 h-4 text-red-600">
                             </i>
 
                             <span class="font-semibold text-sm">
@@ -228,8 +240,8 @@
                         </p>
 
                         <a href="#support"
-                            class="text-xs font-semibold text-indigo-600
-                                  hover:text-indigo-700">
+                            class="text-xs font-semibold text-red-600
+                                  hover:text-red-700">
                             Contacter le support →
                         </a>
 
@@ -266,11 +278,11 @@
 
             <div class="flex items-center gap-5 text-sm text-slate-500">
 
-                <a href="#faq" class="hover:text-indigo-600">
+                <a href="#faq" class="hover:text-red-600">
                     FAQ
                 </a>
 
-                <a href="#support" class="hover:text-indigo-600">
+                <a href="#support" class="hover:text-red-600">
                     Support
                 </a>
 
