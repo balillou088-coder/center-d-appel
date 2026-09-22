@@ -53,11 +53,11 @@
                     Guides
                 </a>
 
-                <a href="#faq" class="text-slate-600 hover:text-red-600 transition">
+                <a href="{{ route('faq') }}" class="text-slate-600 hover:text-red-600 transition">
                     Questions fréquentes
                 </a>
 
-                <a href="#support" class="text-slate-600 hover:text-red-600 transition">
+                <a href="{{ route('support') }}" class="text-slate-600 hover:text-red-600 transition">
                     Support
                 </a>
 
@@ -133,7 +133,7 @@
                         </a>
 
 
-                        <a href="#appels"
+                        <a href="{{ route('guides.appels') }}"
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
