@@ -10,6 +10,11 @@ class GuideController extends Controller
     {
         return view('appels');
     }
+    // app/Http/Controllers/GuideController.php
+public function statistiques()
+{
+    return view('statistiques');
+}
 
    
 }

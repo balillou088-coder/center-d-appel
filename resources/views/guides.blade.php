@@ -1,3 +1,4 @@
+```blade
 @extends('layouts.app')
 
 @section('title', 'Guides | Arti Web Documentation')
@@ -53,7 +54,7 @@
                           text-slate-500">
                         Retrouvez les ressources nécessaires pour comprendre,
                         utiliser et administrer efficacement la plateforme
-                        <span class="font-semibold text-blue-700">
+                        <span class="font-semibold text-slate-700">
                             Arti Web
                         </span>.
                     </p>
@@ -105,32 +106,47 @@
                                    animate-[statusGlow_2s_ease-in-out_infinite]">
                         </span>
 
-                        {{-- Pulse --}}
-                        <span
-                            class="absolute inset-0
-                                   rounded-full
-                                   bg-green-400
-                                   opacity-40
-                                   animate-ping">
-                        </span>
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
 
-                        {{-- Point principal --}}
-                        <span
-                            class="relative
-                                   w-2.5 h-2.5
-                                   rounded-full
-                                   bg-green-500
-                                   shadow-[0_0_10px_rgba(34,197,94,0.7)]">
-                        </span>
-
-                    </span>
-
-                    {{-- Texte --}}
-                    <span class="relative z-10">
-                        Documentation disponible
-                    </span>
+                    Documentation disponible
 
                 </div>
+
+            </div>
+
+        </div>
+
+
+        {{-- =========================
+        SEARCH
+    ========================== --}}
+        <div class="mb-10">
+
+            <div class="relative max-w-2xl">
+
+                <i data-lucide="search"
+                    class="absolute left-4 top-1/2
+                      -translate-y-1/2
+                      w-5 h-5
+                      text-slate-400">
+                </i>
+
+                <input type="text" placeholder="Rechercher dans la documentation..."
+                    class="w-full
+                       pl-12 pr-4 py-3.5
+                       bg-white
+                       border border-slate-200
+                       rounded-xl
+                       text-sm
+                       text-slate-700
+                       placeholder:text-slate-400
+                       outline-none
+                       shadow-sm
+                       transition
+
+                       focus:border-red-300
+                       focus:ring-4
+                       focus:ring-red-50">
 
             </div>
         </div>
@@ -580,27 +596,42 @@
 
         </div>
 
-    </div>
 
+        {{-- =========================
+        SUPPORT
+    ========================== --}}
+        <div class="mt-10">
 
-    {{-- Animation ping --}}
-    <style>
-        @keyframes ping {
+            <div
+                class="relative overflow-hidden
+                    rounded-2xl
+                    bg-slate-900
+                    px-6 py-8
+                    md:px-8">
 
-            75%,
-            100% {
-                transform: scale(2);
-                opacity: 0;
-            }
-        }
+                <div
+                    class="relative z-10
+                        flex flex-col
+                        md:flex-row
+                        md:items-center
+                        md:justify-between
+                        gap-6">
 
-        @keyframes statusGlow {
+                    <div class="max-w-2xl">
 
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 0.25;
-            }
+                        <div class="flex items-center gap-2 mb-3">
+
+                            <i data-lucide="headphones" class="w-5 h-5 text-red-400">
+                            </i>
+
+                            <span
+                                class="text-sm
+                                     font-semibold
+                                     text-red-400">
+
+                                Support technique
+
+                            </span>
 
             50% {
                 transform: scale(1.5);
@@ -611,3 +642,4 @@
     </style>
 
 @endsection
+```
