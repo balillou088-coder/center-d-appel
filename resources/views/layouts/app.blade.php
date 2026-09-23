@@ -1,4 +1,3 @@
-```blade
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -32,10 +31,6 @@
                     <h1 class="font-bold text-lg leading-none">
                         Arti Web
                     </h1>
-
-                    <span class="text-xs text-slate-500">
-                        Documentation
-                    </span>
                 </div>
 
             </a>
@@ -273,13 +268,29 @@
                 © {{ date('Y') }} Arti Web Docs
             </p>
 
-            <div class="flex items-center gap-5 text-sm text-slate-500">
+            <div class="flex items-center gap-3 text-sm">
 
-                <a href="#faq" class="hover:text-red-600">
+                <a href="#faq"
+                    class="inline-flex items-center justify-center
+                           px-4 py-2
+                           rounded-lg
+                           bg-blue-600
+                           text-white
+                           font-medium
+                           hover:bg-blue-700
+                           transition">
                     FAQ
                 </a>
 
-                <a href="#support" class="hover:text-red-600">
+                <a href="#support"
+                    class="inline-flex items-center justify-center
+                           px-4 py-2
+                           rounded-lg
+                           bg-red-600
+                           text-white
+                           font-medium
+                           hover:bg-red-700
+                           transition">
                     Support
                 </a>
 
