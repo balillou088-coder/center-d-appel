@@ -1,4 +1,3 @@
-```blade
 @extends('layouts.app')
 
 @section('title', 'Guides | Arti Web Documentation')
@@ -51,7 +50,7 @@
 
                         Retrouvez les ressources nécessaires pour comprendre,
                         utiliser et administrer efficacement la plateforme
-                        <span class="font-semibold text-slate-700">
+                        <span class="font-semibold text-blue-700">
                             Arti Web
                         </span>.
 
@@ -60,51 +59,76 @@
                 </div>
 
 
-                {{-- Documentation version --}}
-                <div class="flex items-center gap-3
-                        text-sm text-slate-500">
+                {{-- Documentation disponible --}}
+                <div
+                    class="group relative inline-flex items-center gap-3
+                           px-4 py-3
+                           rounded-2xl
+                           bg-white/60
+                           backdrop-blur-xl
+                           border border-slate-200/80
+                           text-slate-700
+                           text-sm font-medium
+                           cursor-default
+                           overflow-hidden
+                           transition-all duration-500
+                           hover:-translate-y-0.5
+                           hover:border-blue-200
+                           hover:bg-white/80
+                           hover:shadow-[0_8px_30px_rgba(37,99,235,0.10)]">
 
-                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    {{-- Shimmer léger --}}
+                    <span
+                        class="absolute inset-0
+                               -translate-x-full
+                               bg-gradient-to-r
+                               from-transparent
+                               via-white/70
+                               to-transparent
+                               group-hover:translate-x-full
+                               transition-transform
+                               duration-1000
+                               pointer-events-none">
+                    </span>
 
-                    Documentation disponible
+                    {{-- Point vert animé --}}
+                    <span class="relative flex w-2.5 h-2.5 z-10">
+
+                        {{-- Glow --}}
+                        <span
+                            class="absolute inset-0
+                                   rounded-full
+                                   bg-green-400
+                                   opacity-40
+                                   animate-[statusGlow_2s_ease-in-out_infinite]">
+                        </span>
+
+                        {{-- Pulse --}}
+                        <span
+                            class="absolute inset-0
+                                   rounded-full
+                                   bg-green-400
+                                   opacity-40
+                                   animate-ping">
+                        </span>
+
+                        {{-- Point principal --}}
+                        <span
+                            class="relative
+                                   w-2.5 h-2.5
+                                   rounded-full
+                                   bg-green-500
+                                   shadow-[0_0_10px_rgba(34,197,94,0.7)]">
+                        </span>
+
+                    </span>
+
+                    {{-- Texte --}}
+                    <span class="relative z-10">
+                        Documentation disponible
+                    </span>
 
                 </div>
-
-            </div>
-
-        </div>
-
-
-        {{-- =========================
-        SEARCH
-    ========================== --}}
-        <div class="mb-10">
-
-            <div class="relative max-w-2xl">
-
-                <i data-lucide="search"
-                    class="absolute left-4 top-1/2
-                      -translate-y-1/2
-                      w-5 h-5
-                      text-slate-400">
-                </i>
-
-                <input type="text" placeholder="Rechercher dans la documentation..."
-                    class="w-full
-                       pl-12 pr-4 py-3.5
-                       bg-white
-                       border border-slate-200
-                       rounded-xl
-                       text-sm
-                       text-slate-700
-                       placeholder:text-slate-400
-                       outline-none
-                       shadow-sm
-                       transition
-
-                       focus:border-red-300
-                       focus:ring-4
-                       focus:ring-red-50">
 
             </div>
 
@@ -212,7 +236,7 @@
                         <span
                             class="w-8 h-8
                                  rounded-lg
-                                 bg-slate-50
+                                 bg-blue-50
                                  flex items-center
                                  justify-center
                                  group-hover:bg-red-50
@@ -220,7 +244,7 @@
 
                             <i data-lucide="arrow-right"
                                 class="w-4 h-4
-                                  text-slate-500
+                                  text-blue-600
                                   group-hover:text-red-600">
                             </i>
 
@@ -249,18 +273,18 @@
                         duration-200
                         hover:-translate-y-1
                         hover:shadow-lg
-                        hover:border-red-200">
+                        hover:border-blue-200">
 
                     <div class="flex items-start justify-between">
 
                         <div
                             class="w-12 h-12
                                 rounded-xl
-                                bg-red-50
+                                bg-blue-50
                                 flex items-center
                                 justify-center">
 
-                            <i data-lucide="phone" class="w-5 h-5 text-red-600">
+                            <i data-lucide="phone" class="w-5 h-5 text-blue-600">
                             </i>
 
                         </div>
@@ -276,7 +300,7 @@
                         <h2
                             class="text-lg font-bold
                                text-slate-900
-                               group-hover:text-red-600
+                               group-hover:text-blue-600
                                transition">
 
                             Gestion des appels
@@ -301,20 +325,20 @@
                             border-t border-slate-100
                             flex items-center justify-between">
 
-                        <span class="text-sm font-semibold text-red-600">
+                        <span class="text-sm font-semibold text-blue-600">
                             Lire le guide
                         </span>
 
                         <span
                             class="w-8 h-8 rounded-lg
-                                 bg-slate-50
+                                 bg-red-50
                                  flex items-center justify-center
-                                 group-hover:bg-red-50">
+                                 group-hover:bg-blue-50">
 
                             <i data-lucide="arrow-right"
                                 class="w-4 h-4
-                                  text-slate-500
-                                  group-hover:text-red-600">
+                                  text-red-600
+                                  group-hover:text-blue-600">
                             </i>
 
                         </span>
@@ -365,7 +389,8 @@
                         <h2
                             class="text-lg font-bold
                                text-slate-900
-                               group-hover:text-red-600">
+                               group-hover:text-red-600
+                               transition">
 
                             Clients & contacts
 
@@ -393,13 +418,13 @@
 
                         <span
                             class="w-8 h-8 rounded-lg
-                                 bg-slate-50
+                                 bg-blue-50
                                  flex items-center justify-center
                                  group-hover:bg-red-50">
 
                             <i data-lucide="arrow-right"
                                 class="w-4 h-4
-                                  text-slate-500
+                                  text-blue-600
                                   group-hover:text-red-600">
                             </i>
 
@@ -425,16 +450,17 @@
                         transition-all duration-200
                         hover:-translate-y-1
                         hover:shadow-lg
-                        hover:border-red-200">
+                        hover:border-blue-200">
 
                     <div class="flex items-start justify-between">
 
                         <div
                             class="w-12 h-12 rounded-xl
-                                bg-red-50
-                                flex items-center justify-center">
+                                bg-blue-50
+                                flex items-center
+                                justify-center">
 
-                            <i data-lucide="bar-chart-3" class="w-5 h-5 text-red-600">
+                            <i data-lucide="bar-chart-3" class="w-5 h-5 text-blue-600">
                             </i>
 
                         </div>
@@ -450,7 +476,8 @@
                         <h2
                             class="text-lg font-bold
                                text-slate-900
-                               group-hover:text-red-600">
+                               group-hover:text-blue-600
+                               transition">
 
                             Rapports & statistiques
 
@@ -472,20 +499,20 @@
                             border-t border-slate-100
                             flex items-center justify-between">
 
-                        <span class="text-sm font-semibold text-red-600">
+                        <span class="text-sm font-semibold text-blue-600">
                             Lire le guide
                         </span>
 
                         <span
                             class="w-8 h-8 rounded-lg
-                                 bg-slate-50
+                                 bg-red-50
                                  flex items-center justify-center
-                                 group-hover:bg-red-50">
+                                 group-hover:bg-blue-50">
 
                             <i data-lucide="arrow-right"
                                 class="w-4 h-4
-                                  text-slate-500
-                                  group-hover:text-red-600">
+                                  text-red-600
+                                  group-hover:text-blue-600">
                             </i>
 
                         </span>
@@ -517,7 +544,8 @@
                         <div
                             class="w-12 h-12 rounded-xl
                                 bg-red-50
-                                flex items-center justify-center">
+                                flex items-center
+                                justify-center">
 
                             <i data-lucide="settings" class="w-5 h-5 text-red-600">
                             </i>
@@ -535,7 +563,8 @@
                         <h2
                             class="text-lg font-bold
                                text-slate-900
-                               group-hover:text-red-600">
+                               group-hover:text-red-600
+                               transition">
 
                             Administration
 
@@ -563,13 +592,14 @@
 
                         <span
                             class="w-8 h-8 rounded-lg
-                                 bg-slate-50
-                                 flex items-center justify-center
+                                 bg-blue-50
+                                 flex items-center
+                                 justify-center
                                  group-hover:bg-red-50">
 
                             <i data-lucide="arrow-right"
                                 class="w-4 h-4
-                                  text-slate-500
+                                  text-blue-600
                                   group-hover:text-red-600">
                             </i>
 
@@ -592,19 +622,21 @@
                         border border-slate-200
                         rounded-2xl p-6
                         shadow-sm
-                        transition-all duration-200
+                        transition-all
+                        duration-200
                         hover:-translate-y-1
                         hover:shadow-lg
-                        hover:border-red-200">
+                        hover:border-blue-200">
 
                     <div class="flex items-start justify-between">
 
                         <div
                             class="w-12 h-12 rounded-xl
-                                bg-red-50
-                                flex items-center justify-center">
+                                bg-blue-50
+                                flex items-center
+                                justify-center">
 
-                            <i data-lucide="circle-help" class="w-5 h-5 text-red-600">
+                            <i data-lucide="circle-help" class="w-5 h-5 text-blue-600">
                             </i>
 
                         </div>
@@ -620,7 +652,8 @@
                         <h2
                             class="text-lg font-bold
                                text-slate-900
-                               group-hover:text-red-600">
+                               group-hover:text-blue-600
+                               transition">
 
                             FAQ & dépannage
 
@@ -642,20 +675,20 @@
                             border-t border-slate-100
                             flex items-center justify-between">
 
-                        <span class="text-sm font-semibold text-red-600">
+                        <span class="text-sm font-semibold text-blue-600">
                             Lire le guide
                         </span>
 
                         <span
                             class="w-8 h-8 rounded-lg
-                                 bg-slate-50
+                                 bg-red-50
                                  flex items-center justify-center
-                                 group-hover:bg-red-50">
+                                 group-hover:bg-blue-50">
 
                             <i data-lucide="arrow-right"
                                 class="w-4 h-4
-                                  text-slate-500
-                                  group-hover:text-red-600">
+                                  text-red-600
+                                  group-hover:text-blue-600">
                             </i>
 
                         </span>
@@ -668,92 +701,33 @@
 
         </div>
 
-
-        {{-- =========================
-        SUPPORT
-    ========================== --}}
-        <div class="mt-10">
-
-            <div
-                class="relative overflow-hidden
-                    rounded-2xl
-                    bg-slate-900
-                    px-6 py-8
-                    md:px-8">
-
-                <div
-                    class="relative z-10
-                        flex flex-col
-                        md:flex-row
-                        md:items-center
-                        md:justify-between
-                        gap-6">
-
-                    <div class="max-w-2xl">
-
-                        <div class="flex items-center gap-2 mb-3">
-
-                            <i data-lucide="headphones" class="w-5 h-5 text-red-400">
-                            </i>
-
-                            <span
-                                class="text-sm
-                                     font-semibold
-                                     text-red-400">
-
-                                Support technique
-
-                            </span>
-
-                        </div>
-
-                        <h2 class="text-xl md:text-2xl
-                               font-bold text-white">
-
-                            Vous ne trouvez pas ce que vous cherchez ?
-
-                        </h2>
-
-                        <p
-                            class="mt-2 text-sm
-                              leading-6
-                              text-slate-400">
-
-                            Notre équipe support est disponible
-                            pour vous accompagner et répondre
-                            à vos questions.
-
-                        </p>
-
-                    </div>
-
-
-                    <a href="#support"
-                        class="shrink-0
-                          inline-flex items-center
-                          justify-center gap-2
-                          px-5 py-3
-                          bg-white
-                          text-slate-900
-                          rounded-lg
-                          text-sm font-semibold
-                          hover:bg-slate-100
-                          transition">
-
-                        Contacter le support
-
-                        <i data-lucide="arrow-right" class="w-4 h-4">
-                        </i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
     </div>
 
+
+    {{-- Animation ping --}}
+    <style>
+        @keyframes ping {
+
+            75%,
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        @keyframes statusGlow {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.25;
+            }
+
+            50% {
+                transform: scale(1.5);
+                opacity: 0.55;
+            }
+        }
+    </style>
+
 @endsection
-```
