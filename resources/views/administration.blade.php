@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Guides | Arti Web Documentation')
+@section('title', 'Administration | Arti Web Documentation')
 
 @section('content')
 
@@ -12,6 +12,7 @@
         <div class="mb-10">
 
             <div class="flex items-center gap-2 mb-4">
+
                 <span
                     class="inline-flex items-center gap-2
                          px-3 py-1.5
@@ -21,10 +22,15 @@
                          text-[11px] font-semibold
                          tracking-wide
                          text-red-600">
-                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
-                    Documentation
+
+                    <i data-lucide="settings" class="w-3.5 h-3.5"></i>
+
+                    Administration
+
                 </span>
+
             </div>
+
 
             <div
                 class="flex flex-col lg:flex-row
@@ -33,15 +39,17 @@
                     gap-6">
 
                 <div class="max-w-3xl">
-                    <h1 class="mt-5 text-3xl sm:text-4xl lg:text-5xl
-           font-bold tracking-tight text-slate-900">
+
+                    <h1
+                        class="mt-5 text-3xl sm:text-4xl lg:text-5xl
+                               font-bold tracking-tight text-slate-900">
 
                         <span class="text-blue-700">
-                            Guides
+                            Administration
                         </span>
 
                         <span class="text-red-600">
-                            d'utilisation
+                            de la plateforme
                         </span>
 
                     </h1>
@@ -51,16 +59,19 @@
                           leading-7
                           tracking-[-0.005em]
                           text-slate-500">
-                        Retrouvez les ressources nécessaires pour comprendre,
-                        utiliser et administrer efficacement la plateforme
+
+                        Gérez les utilisateurs, les accès, les paramètres
+                        et les principales fonctionnalités de la plateforme
                         <span class="font-semibold text-blue-700">
                             Arti Web
                         </span>.
+
                     </p>
 
                 </div>
 
-                {{-- Documentation disponible --}}
+
+                {{-- Administration disponible --}}
                 <div
                     class="group relative inline-flex items-center gap-3
                            px-4 py-3
@@ -92,6 +103,7 @@
                                duration-1000
                                pointer-events-none">
                     </span>
+
 
                     {{-- Point vert animé --}}
                     <span class="relative flex w-2.5 h-2.5 z-10">
@@ -125,38 +137,47 @@
 
                     </span>
 
-                    {{-- Texte --}}
+
                     <span class="relative z-10">
-                        Documentation disponible
+                        Administration disponible
                     </span>
 
                 </div>
 
             </div>
+
         </div>
 
 
         {{-- =========================
-        GUIDE GRID
+        ADMINISTRATION GRID
     ========================== --}}
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
-            {{-- CONNEXION --}}
-            <a href="#connexion" class="group">
+
+            {{-- UTILISATEURS --}}
+            <a href="#utilisateurs" class="group">
+
                 <div
                     class="h-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-red-200">
 
                     <div class="flex items-start justify-between">
 
                         <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center">
-                            <i data-lucide="log-in" class="w-5 h-5 text-red-600"></i>
+
+                            <i data-lucide="users" class="w-5 h-5 text-red-600">
+                            </i>
+
                         </div>
 
                         <span class="text-[11px] font-semibold tracking-wider text-slate-400">
+
                             01
+
                         </span>
 
                     </div>
+
 
                     <div class="mt-6">
 
@@ -168,7 +189,9 @@
                                    text-slate-900
                                    group-hover:text-red-600
                                    transition">
-                            Connexion & comptes
+
+                            Gestion des utilisateurs
+
                         </h2>
 
                         <p
@@ -178,12 +201,15 @@
                                   leading-6
                                   tracking-[-0.002em]
                                   text-slate-500">
-                            Apprenez à vous connecter,
-                            gérer votre compte et
-                            modifier vos informations.
+
+                            Gérez les comptes utilisateurs,
+                            consultez leurs informations et
+                            contrôlez leur accès.
+
                         </p>
 
                     </div>
+
 
                     <div
                         class="mt-6 pt-5 border-t border-slate-100
@@ -194,7 +220,9 @@
                                    font-semibold
                                    tracking-[-0.005em]
                                    text-red-600">
-                            Lire le guide
+
+                            Gérer les utilisateurs
+
                         </span>
 
                         <span
@@ -210,26 +238,35 @@
                         </span>
 
                     </div>
+
                 </div>
+
             </a>
 
 
-            {{-- APPELS --}}
-            <a href="#appels" class="group">
+            {{-- ROLES --}}
+            <a href="#roles" class="group">
+
                 <div
                     class="h-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-blue-200">
 
                     <div class="flex items-start justify-between">
 
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
-                            <i data-lucide="phone" class="w-5 h-5 text-blue-600"></i>
+
+                            <i data-lucide="shield-check" class="w-5 h-5 text-blue-600">
+                            </i>
+
                         </div>
 
                         <span class="text-[11px] font-semibold tracking-wider text-slate-400">
+
                             02
+
                         </span>
 
                     </div>
+
 
                     <div class="mt-6">
 
@@ -241,7 +278,9 @@
                                    text-slate-900
                                    group-hover:text-blue-600
                                    transition">
-                            Gestion des appels
+
+                            Rôles & permissions
+
                         </h2>
 
                         <p
@@ -251,12 +290,15 @@
                                   leading-6
                                   tracking-[-0.002em]
                                   text-slate-500">
-                            Gérez les appels entrants et sortants,
-                            consultez l'historique et suivez
-                            les communications.
+
+                            Gérez les rôles et définissez les
+                            permissions accordées à chaque
+                            utilisateur.
+
                         </p>
 
                     </div>
+
 
                     <div
                         class="mt-6 pt-5 border-t border-slate-100
@@ -267,7 +309,9 @@
                                    font-semibold
                                    tracking-[-0.005em]
                                    text-blue-600">
-                            Lire le guide
+
+                            Gérer les permissions
+
                         </span>
 
                         <span
@@ -283,26 +327,35 @@
                         </span>
 
                     </div>
+
                 </div>
+
             </a>
 
 
-            {{-- CLIENTS --}}
-            <a href="#clients" class="group">
+            {{-- CONFIGURATION --}}
+            <a href="#configuration" class="group">
+
                 <div
                     class="h-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-red-200">
 
                     <div class="flex items-start justify-between">
 
                         <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center">
-                            <i data-lucide="users" class="w-5 h-5 text-red-600"></i>
+
+                            <i data-lucide="sliders-horizontal" class="w-5 h-5 text-red-600">
+                            </i>
+
                         </div>
 
                         <span class="text-[11px] font-semibold tracking-wider text-slate-400">
+
                             03
+
                         </span>
 
                     </div>
+
 
                     <div class="mt-6">
 
@@ -314,7 +367,9 @@
                                    text-slate-900
                                    group-hover:text-red-600
                                    transition">
-                            Clients & contacts
+
+                            Configuration
+
                         </h2>
 
                         <p
@@ -324,12 +379,15 @@
                                   leading-6
                                   tracking-[-0.002em]
                                   text-slate-500">
-                            Consultez, recherchez et gérez
-                            les informations relatives
-                            aux clients et contacts.
+
+                            Configurez les paramètres généraux
+                            et adaptez la plateforme aux besoins
+                            de votre organisation.
+
                         </p>
 
                     </div>
+
 
                     <div
                         class="mt-6 pt-5 border-t border-slate-100
@@ -340,7 +398,9 @@
                                    font-semibold
                                    tracking-[-0.005em]
                                    text-red-600">
-                            Lire le guide
+
+                            Paramètres généraux
+
                         </span>
 
                         <span
@@ -356,26 +416,35 @@
                         </span>
 
                     </div>
+
                 </div>
+
             </a>
 
 
-            {{-- RAPPORTS --}}
-            <a href="#rapports" class="group">
+            {{-- DONNEES --}}
+            <a href="#donnees" class="group">
+
                 <div
                     class="h-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-blue-200">
 
                     <div class="flex items-start justify-between">
 
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
-                            <i data-lucide="bar-chart-3" class="w-5 h-5 text-blue-600"></i>
+
+                            <i data-lucide="database" class="w-5 h-5 text-blue-600">
+                            </i>
+
                         </div>
 
                         <span class="text-[11px] font-semibold tracking-wider text-slate-400">
+
                             04
+
                         </span>
 
                     </div>
+
 
                     <div class="mt-6">
 
@@ -387,7 +456,9 @@
                                    text-slate-900
                                    group-hover:text-blue-600
                                    transition">
-                            Rapports & statistiques
+
+                            Gestion des données
+
                         </h2>
 
                         <p
@@ -397,12 +468,14 @@
                                   leading-6
                                   tracking-[-0.002em]
                                   text-slate-500">
-                            Analysez les performances grâce
-                            aux rapports et indicateurs
-                            disponibles.
+
+                            Consultez et organisez les principales
+                            données utilisées par la plateforme.
+
                         </p>
 
                     </div>
+
 
                     <div
                         class="mt-6 pt-5 border-t border-slate-100
@@ -413,7 +486,9 @@
                                    font-semibold
                                    tracking-[-0.005em]
                                    text-blue-600">
-                            Lire le guide
+
+                            Gérer les données
+
                         </span>
 
                         <span
@@ -429,26 +504,35 @@
                         </span>
 
                     </div>
+
                 </div>
+
             </a>
 
 
-            {{-- ADMINISTRATION --}}
-            <a href="#administration" class="group">
+            {{-- SECURITE --}}
+            <a href="#securite" class="group">
+
                 <div
                     class="h-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-red-200">
 
                     <div class="flex items-start justify-between">
 
                         <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center">
-                            <i data-lucide="settings" class="w-5 h-5 text-red-600"></i>
+
+                            <i data-lucide="lock-keyhole" class="w-5 h-5 text-red-600">
+                            </i>
+
                         </div>
 
                         <span class="text-[11px] font-semibold tracking-wider text-slate-400">
+
                             05
+
                         </span>
 
                     </div>
+
 
                     <div class="mt-6">
 
@@ -460,7 +544,9 @@
                                    text-slate-900
                                    group-hover:text-red-600
                                    transition">
-                            Administration
+
+                            Sécurité
+
                         </h2>
 
                         <p
@@ -470,12 +556,15 @@
                                   leading-6
                                   tracking-[-0.002em]
                                   text-slate-500">
-                            Configurez la plateforme et
-                            gérez les paramètres réservés
-                            aux administrateurs.
+
+                            Protégez les comptes et contrôlez
+                            les accès aux fonctionnalités
+                            sensibles de la plateforme.
+
                         </p>
 
                     </div>
+
 
                     <div
                         class="mt-6 pt-5 border-t border-slate-100
@@ -486,7 +575,9 @@
                                    font-semibold
                                    tracking-[-0.005em]
                                    text-red-600">
-                            Lire le guide
+
+                            Sécurité des accès
+
                         </span>
 
                         <span
@@ -502,26 +593,35 @@
                         </span>
 
                     </div>
+
                 </div>
+
             </a>
 
 
-            {{-- FAQ --}}
-            <a href="#faq" class="group">
+            {{-- ACTIVITE --}}
+            <a href="#activite" class="group">
+
                 <div
                     class="h-full bg-white border border-slate-200 rounded-2xl p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-blue-200">
 
                     <div class="flex items-start justify-between">
 
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
-                            <i data-lucide="circle-help" class="w-5 h-5 text-blue-600"></i>
+
+                            <i data-lucide="activity" class="w-5 h-5 text-blue-600">
+                            </i>
+
                         </div>
 
                         <span class="text-[11px] font-semibold tracking-wider text-slate-400">
+
                             06
+
                         </span>
 
                     </div>
+
 
                     <div class="mt-6">
 
@@ -533,7 +633,9 @@
                                    text-slate-900
                                    group-hover:text-blue-600
                                    transition">
-                            FAQ & dépannage
+
+                            Suivi de l'activité
+
                         </h2>
 
                         <p
@@ -543,12 +645,15 @@
                                   leading-6
                                   tracking-[-0.002em]
                                   text-slate-500">
-                            Consultez les questions fréquentes
-                            et trouvez rapidement des solutions
-                            aux problèmes courants.
+
+                            Consultez les opérations importantes
+                            et suivez l'activité générale
+                            de la plateforme.
+
                         </p>
 
                     </div>
+
 
                     <div
                         class="mt-6 pt-5 border-t border-slate-100
@@ -559,7 +664,9 @@
                                    font-semibold
                                    tracking-[-0.005em]
                                    text-blue-600">
-                            Lire le guide
+
+                            Voir l'activité
+
                         </span>
 
                         <span
@@ -575,7 +682,9 @@
                         </span>
 
                     </div>
+
                 </div>
+
             </a>
 
         </div>
@@ -583,7 +692,9 @@
     </div>
 
 
-    {{-- Animation ping --}}
+    {{-- =========================
+        ANIMATIONS
+    ========================== --}}
     <style>
         @keyframes ping {
 
@@ -592,6 +703,7 @@
                 transform: scale(2);
                 opacity: 0;
             }
+
         }
 
         @keyframes statusGlow {

@@ -18,3 +18,7 @@ Route::get('/guides/appels', [GuideController::class, 'appels'])->name('guides.a
 Route::get('/guides', function () {
     return view('guides');
 })->name('guides');
+use App\Http\Controllers\AdministrationController;
+
+Route::get('/administration', [AdministrationController::class, 'index'])
+    ->name('administration');
