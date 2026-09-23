@@ -262,7 +262,7 @@
                         </a>
 
 
-                        <a href="#administration"
+                        <a href="{{ route('administration') }}"
                             class="flex items-center gap-3 px-3 py-2.5
                                   rounded-lg text-sm
                                   text-slate-600
